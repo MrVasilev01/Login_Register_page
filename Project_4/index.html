@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Login and Register Form</title>
+</head>
+
+<body>
+  <div class="login-box wrapper fade-in">
+    <form action="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class="bi bi-person-fill"></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class="bi bi-key"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      
+      <button type="submit" onclick="window.location.href = 'index_2.html';" class="btn">Login</button>
+
+      <div class="register-link">
+        <p>Don't have an account? <a id="register" href="#">Register</a></p>
+      </div>
+
+      <div class="wrapper-btn">
+        <div class="button">
+          <div class="icon">
+            <i class="bi bi-facebook"></i>
+          </div>
+          <span>Facebook</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="bi bi-instagram"></i>
+          </div>
+          <span>Instagram</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="bi bi-youtube"></i>
+          </div>
+          <span>YouTube</span>
+        </div>
+      </div>
+      
+
+    </form>
+  </div>
+  <div class="register-box wrapper">
+    <form action="">
+      <h1>Register</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class="bi bi-person-fill"></i>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Email" required>
+        <i class="bi bi-envelope-at"></i>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Phone" required>
+        <i class="bi bi-phone"></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class="bi bi-key"></i>
+      </div>
+      
+      <button type="submit" class="btn">Register</button>
+
+      <div class="register-link">
+        <p>You have account? <a id="login" href="#">Login</a></p>
+      </div>
+
+      <div class="wrapper-btn">
+        <div class="button">
+          <div class="icon">
+            <i class="bi bi-facebook"></i>
+          </div>
+          <span>Facebook</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="bi bi-instagram"></i>
+          </div>
+          <span>Instagram</span>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="bi bi-youtube"></i>
+          </div>
+          <span>YouTube</span>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

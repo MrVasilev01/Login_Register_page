@@ -1,0 +1,37 @@
+body {
+    min-height: 100vh;
+    background-color:darkgray;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .div-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        background-color:#2966df;
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        color: aliceblue;
+        cursor: pointer;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+
+        .open{
+            max-height: 500px;
+        }
+
+        h2{
+            margin: 0;
+        }
+    }
+    
+}
+  
+
+  

@@ -1,0 +1,276 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: no-repeat url("back.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 420px;
+  background: rgba(141, 205, 230, 0.733);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  transition: 2s;
+  position: absolute;
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.wrapper .input-box input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.wrapper .input-box input::-moz-placeholder {
+  color: #fff;
+}
+.wrapper .input-box input::placeholder {
+  color: #fff;
+}
+.wrapper .input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.wrapper .remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 5px;
+}
+.wrapper .remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper .remember-forgot a:hover {
+  text-decoration: underline;
+}
+.wrapper .btn {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+.wrapper .btn:hover {
+  background: #fff;
+  color: #333;
+}
+.wrapper .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+.wrapper .btn:active {
+  top: 1px;
+}
+.wrapper .btn:active::after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.wrapper .register-link p {
+  margin-bottom: 0;
+}
+.wrapper .register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.wrapper .register-link p a:hover {
+  text-decoration: underline;
+}
+
+.login-box {
+  transform: translate(300%);
+}
+
+.register-box {
+  transform: translateX(300%);
+}
+
+.fade-in {
+  animation: fade-in 2s;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation: fade-out 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(300%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-300%);
+  }
+}
+.social-media {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.platform-name {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-btn:hover .platform-name {
+  opacity: 1;
+  visibility: visible;
+  left: 100%;
+}
+
+.wrapper-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-btn .button {
+  align-items: center;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper-btn .button .icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 30px;
+  transition: all 0.3s ease-out;
+}
+.wrapper-btn .button .icon i {
+  font-size: 15px;
+  line-height: 30px;
+  transition: all 0.3s ease-out;
+  color: #333;
+}
+.wrapper-btn .button:hover {
+  width: 120px;
+}
+.wrapper-btn .button:hover .icon i {
+  color: #fff;
+}
+.wrapper-btn .button:nth-child(1):hover .icon {
+  background: #4267B2;
+}
+.wrapper-btn .button:nth-child(2):hover .icon {
+  background: #E1306C;
+}
+.wrapper-btn .button:nth-child(3):hover .icon {
+  background: #ff0000;
+}
+.wrapper-btn .button span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper-btn .button:nth-child(1) span {
+  color: #4267B2;
+}
+.wrapper-btn .button:nth-child(2) span {
+  color: #E1306C;
+}
+.wrapper-btn .button:nth-child(3) span {
+  color: #ff0000;
+}/*# sourceMappingURL=style.css.map */
